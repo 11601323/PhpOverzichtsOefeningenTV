@@ -1,0 +1,18 @@
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuites>
+       <testsuite name="testforRoad">
+          <directory>./test/map/</directory>
+       </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist
+                addUncoveredFilesFromWhitelist="true"
+                processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/util/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./coverage/html/"/>
+    </logging>
+</phpunit>
+

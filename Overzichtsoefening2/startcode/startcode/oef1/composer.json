@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "psr-4": {
+      "entities\\": "src/model/entities",
+      "repositories\\": "src/model/repositories",
+      "model\\": "src/model"
+    }
+  }
+}
